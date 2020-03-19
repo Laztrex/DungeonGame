@@ -103,7 +103,7 @@ from dungeon_source.game_engine import Game
 if __name__ == '__main__':
     repeat = None
     while True:
-        my_game = Game(file='rpg.json', player=repeat)
+        my_game = Game(file='rpg_map.json', player=repeat)
         repeat = my_game.play_game()
         if not repeat:
             break

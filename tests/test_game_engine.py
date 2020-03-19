@@ -24,7 +24,7 @@ class GlobalEngineTest(unittest.TestCase):
 
     def setUp(self):
         self.game_test = \
-            Game(file=os.path.join(os.path.dirname(os.getcwd()), 'rpg.json'), player='Петя')
+            Game(file=os.path.join(os.path.dirname(os.getcwd()), 'rpg_map.json'), player='Петя')
         cprint(f'Вызван {self.shortDescription()}', flush=True, color='cyan')
         self.time_control = decimal.Decimal('123456.0987654321')
 
