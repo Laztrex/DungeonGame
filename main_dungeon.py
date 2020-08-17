@@ -97,21 +97,13 @@ import time
 from dungeon_source.game_engine import Game
 
 
-# если изначально не писать число в виде строки - теряется точность!
-
-
 if __name__ == '__main__':
     repeat = None
     while True:
-        my_game = Game(file='rpg_map.json', player=repeat)
+        my_game = Game(file='files/rpg_map.json', player=repeat)
         repeat = my_game.play_game()
         if not repeat:
             break
         time.sleep(1)
         my_game.rebirth_at_beginning()
         time.sleep(1)
-
-
-# Учитывая время и опыт, не забывайте о точности вычислений!
-
-# зачет! 
